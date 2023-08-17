@@ -4,7 +4,7 @@ project(learn-opengl CXX)
 set(CMAKE_CXX_STANDARD 11)
 
 find_package(PkgConfig)
-pkg_check_modules(GLFW glfw3 gl)
+pkg_check_modules(GLFW glfw3 gl epoxy)
 
 include_directories(${GLFW_INCLUDE_DIRS})
 
